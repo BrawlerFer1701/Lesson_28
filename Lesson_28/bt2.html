@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap 2</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header{
+    	width: 100%;
+    	text-align: center;
+    	padding: 20px;
+    	background: #F22424;
+    }
+    #content{
+    	width: 80%;
+    	margin: auto;
+    	display: grid;
+    	grid-template-columns: auto auto auto auto;
+    	grid-template-rows: 150px 100px 100px 50px 50px 50px 50px;
+    }
+    .col{
+    	border: 1px solid #797171;
+    	text-align: center;
+    	padding: 20px;
+    }
+    #item1{
+    	grid-column: span 3;
+    	grid-row: span 2;
+    	background: #271DF1;
+    }
+    #item2{
+/*    	grid-row: span 3;*/
+    	background: #19B533;
+    }
+    #item3{
+/*    	grid-row: span 2;*/
+    	background: #F2D651;
+    }
+    #item4{
+    	grid-row: span 2;
+    	grid-column: span 2;
+    	background: #19B533;
+    }
+    #item5{
+    	grid-row: span 3;
+    	background: #F22424;
+    }
+    #item6{
+    	background: #CF4735;
+    }
+    #item7, #item8, #item9{
+    	grid-row: span 2;
+    	background: #CF4735;
+    }
+    #item10{
+    	grid-column: span 2;
+    	background: #EBBBF5;
+    }
+    #item11{
+    	grid-column: span 4;
+    	background: #4965F1;
+    }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <div id="content">
+        <div class="col" id="item1">1</div>
+        <div class="col" id="item2">2</div>
+        <div class="col" id="item3">3</div>
+        <div class="col" id="item4">4</div>
+        <div class="col" id="item5">5</div>
+        <div class="col" id="item6">6</div>
+        <div class="col" id="item7">7</div>
+        <div class="col" id="item8">8</div>
+        <div class="col" id="item9">9</div>
+        <div class="col" id="item10">10</div>
+        <div class="col" id="item11">11</div>
+    </div>
+</body>
+
+</html>
